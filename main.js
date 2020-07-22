@@ -4,8 +4,21 @@ const FULL_HEART = '♥'
 
 // Your JavaScript code goes here!
 
+const errorModal = document.querySelector('#modal')
+errorModal.classList += 'hidden'
+
+function addLike(){
+  document.addEventListener('click', (e) =>{
+    // console.log(e.target)
+    if (e.target.className === "like-glyph"){
+      console.log("in if")
+    }
+
+  })
+}
 
 
+addLike();
 
 //------------------------------------------------------------------------------
 // Ignore after this point. Used only for demo purposes
